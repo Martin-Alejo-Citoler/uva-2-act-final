@@ -3,17 +3,18 @@
 <html>
 
 
+
     <head>
+
         <meta charset="utf-8">
         <title>Diseño y Desarrollo Web</title>
         <script src="https://cdn.tailwindcss.com"></script>
+        <script src="script/modo oscuro.js"></script>
     </head>
 
 
-    <body class="min-h-screen flex flex-col items-center bg-[url(img/fondo.png)]"> 
-         
-        
 
+    <body class="min-h-screen flex flex-col items-center bg-[url(img/fondo.png)]"> 
 
 
         
@@ -22,24 +23,23 @@
             <a class="text-4xl font-thin p-4 text-slate-100 hover:text-zinc-400 active:text-zinc-100 my-auto" href="index.html">miCursada</a>          
 
             <div class=" p-2 justify-center flex flex-row flex-wrap my-auto">
+
                 <a href="index.html" class="text-nowrap mx-5 align-middle text-slate-100 hover:bg rounded-xl p-1 hover:bg-zinc-600 active:bg active:bg-zinc-800">Home</a>
                 <a href="avisos.html" class="text-nowrap mx-5 align-middle text-slate-100 hover:bg rounded-xl p-1 hover:bg-zinc-600 active:bg active:bg-zinc-800">Avisos</a>
                 <a href="sobre mi.html" class="text-nowrap mx-5 align-middle text-slate-100 hover:bg rounded-xl p-1 hover:bg-zinc-600 active:bg active:bg-zinc-800">Sobre mi</a>
                 <a href="materias.html" class="text-nowrap mx-5 align-middle text-slate-100 hover:bg rounded-xl p-1 hover:bg-zinc-600 active:bg active:bg-zinc-800">Materias 2025</a>
                 <a href="contacto.html" class="text-nowrap mx-5 align-middle text-slate-100 hover:bg rounded-xl p-1 hover:bg-zinc-600 active:bg active:bg-zinc-800">Contacto</a>
+                
+                <button onclick="cambiar_modo_oscuro()" class="text-nowrap mx-5 align-middle hover:bg rounded-xl p-1 hover:bg-zinc-600 active:bg active:bg-zinc-800 max-w-[32px]"><img src="img/icono luna.png"></i></button>                
+            
             </div>
+        
         </nav>
         
-
-
-
 
         
         <main class="max-w-6xl w-full flex flex-col align-self-middle flex-grow bg-zinc-100 px-3 md:px-20 py-5 border-r-4 border-l-2 border-zinc-300"> <!--este contenedor es usado para mantener toda la pagina centrada. y evitar que crezca demasiado en monitores muy grandes-->
         
-
-
-
 
 
             <div  class="flex flex-row flex-wrap">
@@ -48,30 +48,25 @@
 
 
 
-
-
                     <section class="bg-zinc-300 p-3 m-3 rounded-xl">
-                        <h1 class="text-2xl mb-3">Bibliografiá</h1>
+                        <h1 class="text-2xl mb-3 text-slate-950">Bibliografiá</h1>
 
                         <ul>
-                            <li class="list-disc ml-10">NIEDERST ROBBINS, Jennifer. HTML5 Pocket Reference Quick, Comprehensive, Indispensable (Pocket Reference (O'Reilly)). 5ta. Ed. Págs. 1 a 4, 6 y 7. EE.UU.: O'Reilly Media, 2013. ISBN: 978-1449363352  </li>
-                            <li class="list-disc ml-10">MEYER, Eric A. Capítulo 1: conceptos básicos. En CSS Pocket Reference. 4ta ed. Sebastopol, California: O'Reilly Media, 2011. Pp. 1-13. ISBN 9781449399030 SCHULZ, Ralph G. Diseño web con CSS. 1a ed. México, D. F.: Alfaomega, 2009. Pp. 1-21. ISBN 9786077686156 </li>
+                            <li class="list-disc ml-10 text-slate-950">NIEDERST ROBBINS, Jennifer. HTML5 Pocket Reference Quick, Comprehensive, Indispensable (Pocket Reference (O'Reilly)). 5ta. Ed. Págs. 1 a 4, 6 y 7. EE.UU.: O'Reilly Media, 2013. ISBN: 978-1449363352  </li>
+                            <li class="list-disc ml-10 text-slate-950">MEYER, Eric A. Capítulo 1: conceptos básicos. En CSS Pocket Reference. 4ta ed. Sebastopol, California: O'Reilly Media, 2011. Pp. 1-13. ISBN 9781449399030 SCHULZ, Ralph G. Diseño web con CSS. 1a ed. México, D. F.: Alfaomega, 2009. Pp. 1-21. ISBN 9786077686156 </li>
                         </ul>
                     </section>
 
 
 
-
-
-
                     <section class="bg-zinc-300 p-3 m-3 rounded-xl" >
-                        <h1 class="text-2xl mb-3">Fechas de Exámen</h1>
+                        <h1 class="text-2xl mb-3 text-slate-950">Fechas de Exámen</h1>
 
                         <ul>
-                            <li class="list-disc ml-10">25/4: Primer Parcial - UVAs 1 & 2</li>
-                            <li class="list-disc ml-10">13/6: Segundo Parcial - UVAs 3 & 4</li>
-                            <li class="list-disc ml-10">04/7: Examen Recuperatorio & Examen Final Anticipado - Todas las UVAs</li>
-                            <li class="list-disc ml-10">11/7: Examen Final Regular - Todas las UVAs</li>
+                            <li class="list-disc ml-10 text-slate-950">25/4: Primer Parcial - UVAs 1 & 2</li>
+                            <li class="list-disc ml-10 text-slate-950">13/6: Segundo Parcial - UVAs 3 & 4</li>
+                            <li class="list-disc ml-10 text-slate-950">04/7: Examen Recuperatorio & Examen Final Anticipado - Todas las UVAs</li>
+                            <li class="list-disc ml-10 text-slate-950">11/7: Examen Final Regular - Todas las UVAs</li>
                         </ul>
                     </section>
 
@@ -79,95 +74,91 @@
 
 
 
-
-
                 <section class="min-w-md p-3">
-                    <h1 class="text-2xl mb-3">Actividades UVAs</h1>
+
+                    <h1 class="text-2xl mb-3 text-slate-950">Actividades UVAs</h1>
 
                     <div>
-                        <h2 class="text-xl mb-3">UVA 1</h2>
+
+                        <h2 class="text-xl mb-3 text-slate-950">UVA 1</h2>
 
                         <ul>
-                            <li class="list-disc ml-10"><a href="https://virtualbsp.uade.edu.ar/d2l/le/content/43569/viewContent/557799/View" target="_blank" class=" text-blue-500 :underline active:font-bold visited:text-purple-500">Cuestionario Multiple Choice - Conceptos Generales </a>
+
+                            <li class="list-disc ml-10 text-slate-950"><a href="https://virtualbsp.uade.edu.ar/d2l/le/content/43569/viewContent/557799/View" target="_blank" class=" text-blue-500 :underline active:font-bold visited:text-purple-500">Cuestionario Multiple Choice - Conceptos Generales </a>
 
 
 
-                            <li class="list-disc ml-10">
-                                <a href="https://virtualbsp.uade.edu.ar/d2l/le/content/43569/viewContent/557800/View" target="_blank" class=" text-blue-500 hover:underline active:font-bold visited:text-purple-500">Ejercicio Individual: HTML - Introducción</a>
+                            <li class="list-disc ml-10 text-slate-950">
+                                <a href="https://virtualbsp.uade.edu.ar/d2l/le/content/43569/viewContent/557800/View" target="_blank" class=" text-slate-950 text-blue-500 hover:underline active:font-bold visited:text-purple-500">Ejercicio Individual: HTML - Introducción</a>
                                 <br>
-                                <a href="https://github.com/Martin-Alejo-Citoler/UVA-1-HTML-Introduccion" class="mx-4 text-blue-500  active:font-bold visited:text-purple-500">|Repositorio|</a>
-                                <a href="https://martin-alejo-citoler.github.io/UVA-1-HTML-Introduccion/"  class="mx-4 text-blue-500  active:font-bold visited:text-purple-500">|Página|</a>
+                                <a href="https://github.com/Martin-Alejo-Citoler/UVA-1-HTML-Introduccion" class="mx-4 text-slate-950 text-blue-500  active:font-bold visited:text-purple-500">|Repositorio|</a>
+                                <a href="https://martin-alejo-citoler.github.io/UVA-1-HTML-Introduccion/"  class="mx-4 text-slate-950 text-blue-500  active:font-bold visited:text-purple-500">|Página|</a>
                             </li>
                             
-                            <li class="list-disc ml-10">
-                                <a href="https://virtualbsp.uade.edu.ar/d2l/le/content/43569/viewContent/557802/View" target="_blank" class=" text-blue-500 hover:underline active:font-bold visited:text-purple-500">Ejercicio Individual: HTML - Etiquetas</a>
+                            <li class="list-disc ml-10 text-slate-950">
+                                <a href="https://virtualbsp.uade.edu.ar/d2l/le/content/43569/viewContent/557802/View" target="_blank" class=" text-slate-950 text-blue-500 hover:underline active:font-bold visited:text-purple-500">Ejercicio Individual: HTML - Etiquetas</a>
                                 <br>
-                                <a href="https://github.com/Martin-Alejo-Citoler/UVA-1-HTML-Etiquetas" class="mx-4 text-blue-500  active:font-bold visited:text-purple-500">|Repositorio|</a>
-                                <a href="https://martin-alejo-citoler.github.io/UVA-1-HTML-Etiquetas/"  class="mx-4 text-blue-500  active:font-bold visited:text-purple-500">|Página|</a>
+                                <a href="https://github.com/Martin-Alejo-Citoler/UVA-1-HTML-Etiquetas" class="mx-4 text-slate-950 text-blue-500  active:font-bold visited:text-purple-500">|Repositorio|</a>
+                                <a href="https://martin-alejo-citoler.github.io/UVA-1-HTML-Etiquetas/"  class="mx-4 text-slate-950 text-blue-500  active:font-bold visited:text-purple-500">|Página|</a>
                             </li>
                         
-                            <li class="list-disc ml-10"><a href="https://virtualbsp.uade.edu.ar/d2l/le/content/43569/viewContent/557804/View" target="_blank" class="text-blue-500 hover:underline active:font-bold visited:text-purple-500">Cuestionario Multiple Choice - Arquitectura</a></li>
+                            <li class="list-disc ml-10 text-slate-950"><a href="https://virtualbsp.uade.edu.ar/d2l/le/content/43569/viewContent/557804/View" target="_blank" class="text-blue-500 hover:underline active:font-bold visited:text-purple-500">Cuestionario Multiple Choice - Arquitectura</a></li>
                             
-
-
-                            <li class="list-disc ml-10">
-                                <a href="https://virtualbsp.uade.edu.ar/d2l/le/content/43569/viewContent/557805/View" target="_blank" class=" text-blue-500 hover:underline active:font-bold visited:text-purple-500">Ejercicio Individual: Ejercicio Integrador</a>
+                            <li class="list-disc ml-10 text-slate-950">
+                                <a href="https://virtualbsp.uade.edu.ar/d2l/le/content/43569/viewContent/557805/View" target="_blank" class=" text-slate-950 text-blue-500 hover:underline active:font-bold visited:text-purple-500">Ejercicio Individual: Ejercicio Integrador</a>
                                 <br>
-                                <a href="https://github.com/Martin-Alejo-Citoler/UVA-1-HTML-Integrador" class="mx-4 text-blue-500  active:font-bold visited:text-purple-500">|Repositorio|</a>
-                                <a href="https://martin-alejo-citoler.github.io/UVA-1-HTML-Integrador/"  class="mx-4 text-blue-500  active:font-bold visited:text-purple-500">|Página|</a>
+                                <a href="https://github.com/Martin-Alejo-Citoler/UVA-1-HTML-Integrador" class="text-slate-950 mx-4 text-blue-500  active:font-bold visited:text-purple-500">|Repositorio|</a>
+                                <a href="https://martin-alejo-citoler.github.io/UVA-1-HTML-Integrador/"  class="text-slate-950 mx-4 text-blue-500  active:font-bold visited:text-purple-500">|Página|</a>
                             </li>
                         
                         </ul>
+
                     </div>
 
-
                     <div>
-                        <h2 class="text-xl my-3">UVA 2</h2>
+
+                        <h2 class="text-xl my-3 text-slate-950">UVA 2</h2>
 
                         <ul>
-                            <li class="list-disc ml-10"><a href="https://virtualbsp.uade.edu.ar/d2l/le/content/43569/viewContent/598098/View" target="_blank" class="text-blue-500 hover:underline active:font-bold visited:text-purple-500">Cuestionario - Ux/Ui de un Sitio</a> </li>
-                            
-                            
-                            
-                            <li class="list-disc ml-10"><a href="https://virtualbsp.uade.edu.ar/d2l/le/content/43569/viewContent/598100/View" target="_blank" class=" text-blue-500 hover:underline active:font-bold visited:text-purple-500">Cuestionario - Ux/Ui de un Sitio</a> </li>
-                            
 
+                            <li class="list-disc ml-10 text-slate-950"><a href="https://virtualbsp.uade.edu.ar/d2l/le/content/43569/viewContent/598098/View" target="_blank" class="text-blue-500 hover:underline active:font-bold visited:text-purple-500">Cuestionario - Ux/Ui de un Sitio</a> </li>
                             
-                            <li class="list-disc ml-10"><a href="https://virtualbsp.uade.edu.ar/d2l/le/content/43569/viewContent/557830/View" target="_blank" class=" text-blue-500hover:underline active:font-bold visited:text-purple-500">Cuestionario Multiple Choice - Introducción a CSS</a></li>
+                            <li class="list-disc ml-10 text-slate-950"><a href="https://virtualbsp.uade.edu.ar/d2l/le/content/43569/viewContent/598100/View" target="_blank" class=" text-blue-500 hover:underline active:font-bold visited:text-purple-500">Cuestionario - Ux/Ui de un Sitio</a> </li>
                             
-
-                            
-                            <li class="list-disc ml-10">
+                            <li class="list-disc ml-10 text-slate-950"><a href="https://virtualbsp.uade.edu.ar/d2l/le/content/43569/viewContent/557830/View" target="_blank" class=" text-blue-500hover:underline active:font-bold visited:text-purple-500">Cuestionario Multiple Choice - Introducción a CSS</a></li>
+                                  
+                            <li class="list-disc ml-10 text-slate-950">
                                 <a href="https://virtualbsp.uade.edu.ar/d2l/le/content/43569/viewContent/557831/View" target="_blank" class="text-blue-500 hover:underline active:font-bold visited:text-purple-500">Ejercicio Individual: Formato de Texto</a>
                                 <br>
-                                <a href="https://github.com/Martin-Alejo-Citoler/uva-2-ejercicio-1" class="mx-4 text-blue-500  active:font-bold visited:text-purple-500">|Repositorio|</a>
-                                <a href="https://martin-alejo-citoler.github.io/uva-2-ejercicio-1/"  class="mx-4 text-blue-500  active:font-bold visited:text-purple-500">|Página|</a>
+                                <a href="https://github.com/Martin-Alejo-Citoler/uva-2-ejercicio-1" class="text-slate-950 mx-4 text-blue-500  active:font-bold visited:text-purple-500">|Repositorio|</a>
+                                <a href="https://martin-alejo-citoler.github.io/uva-2-ejercicio-1/"  class="text-slate-950 mx-4 text-blue-500  active:font-bold visited:text-purple-500">|Página|</a>
                             </li>
                                 
-                            <li class="list-disc ml-10">
+                            <li class="list-disc ml-10 text-slate-950">
                                 <a href="https://virtualbsp.uade.edu.ar/d2l/le/content/43569/viewContent/557833/View" target="_blank" class=" text-blue-500 hover:underline active:font-bold visited:text-purple-500">Ejercicio Individual: Formato de Cajas</a>
                                 <br>
-                                <a href="https://github.com/Martin-Alejo-Citoler/uva-2-act-2" class="mx-4 text-blue-500  active:font-bold visited:text-purple-500">|Repositorio|</a>
-                                <a href="https://martin-alejo-citoler.github.io/uva-2-act-2/"  class="mx-4 text-blue-500  active:font-bold visited:text-purple-500">|Página|</a>
+                                <a href="https://github.com/Martin-Alejo-Citoler/uva-2-act-2" class="text-slate-950 mx-4 text-blue-500  active:font-bold visited:text-purple-500">|Repositorio|</a>
+                                <a href="https://martin-alejo-citoler.github.io/uva-2-act-2/"  class="text-slate-950 mx-4 text-blue-500  active:font-bold visited:text-purple-500">|Página|</a>
                             </li>
                             
-                            <li class="list-disc ml-10">
+                            <li class="list-disc ml-10 text-slate-950">
                                 <a href="https://virtualbsp.uade.edu.ar/d2l/le/content/43569/viewContent/557848/View" target="_blank" class="text-blue-500 hover:underline active:font-bold visited:text-purple-500">Ejercicio Individual: Unidades de Medida</a>
                                 <br>
-                                <a href="https://github.com/Martin-Alejo-Citoler/uva-2-act-3" class="mx-4 text-blue-500  active:font-bold visited:text-purple-500">|Repositorio|</a>
-                                <a href="https://martin-alejo-citoler.github.io/uva-2-act-3/"  class="mx-4 text-blue-500  active:font-bold visited:text-purple-500">|Página|</a>
+                                <a href="https://github.com/Martin-Alejo-Citoler/uva-2-act-3" class="text-slate-950 mx-4 text-blue-500  active:font-bold visited:text-purple-500">|Repositorio|</a>
+                                <a href="https://martin-alejo-citoler.github.io/uva-2-act-3/"  class="text-slate-950 mx-4 text-blue-500  active:font-bold visited:text-purple-500">|Página|</a>
                             </li>
                             
-                            <li class="list-disc ml-10">
+                            <li class="list-disc ml-10 text-slate-950">
                                 <a href="https://virtualbsp.uade.edu.ar/d2l/le/content/43569/viewContent/557842/View" target="_blank" class="text-blue-500 hover:underline active:font-bold visited:text-purple-500">Ejercicio Individual: Grid y Flexbox</a>
                                 <br>
-                                <a href="https://github.com/Martin-Alejo-Citoler/uva-2-ejercicio-4" class="mx-4 text-blue-500  active:font-bold visited:text-purple-500">|Repositorio|</a>
-                                <a href="https://martin-alejo-citoler.github.io/uva-2-ejercicio-4/"  class="mx-4 text-blue-500  active:font-bold visited:text-purple-500">|Página|</a>
+                                <a href="https://github.com/Martin-Alejo-Citoler/uva-2-ejercicio-4" class="text-slate-950 mx-4 text-blue-500  active:font-bold visited:text-purple-500">|Repositorio|</a>
+                                <a href="https://martin-alejo-citoler.github.io/uva-2-ejercicio-4/"  class="text-slate-950 mx-4 text-blue-500  active:font-bold visited:text-purple-500">|Página|</a>
                             </li>
                         
-                        
                         </ul>
+
                     </div>
+
                 </section>
 
         </div>
@@ -178,9 +169,8 @@
         
 
 
-
-
         <footer class="flex flex-row flex-nowrap justify-around content-center bg-zinc-800 w-full border-t-4 border-zinc-600">
+
             <p class="font-thin  text-center text-white p-5">Martín Alejo Citoler <br>
                 Diseño Desarrollo Web (15130)<br>
                 Uade <br>
@@ -190,6 +180,7 @@
                 Diseño Desarrollo Web (15130)<br>
                 Uade <br>
             </p>
+            
         </footer>
 
 
