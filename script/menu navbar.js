@@ -12,7 +12,6 @@ window.addEventListener("DOMContentLoaded", (event) => { //esperar a que carge e
 
     menu = document.getElementById('menu navbar'); 
     menu_boton = document.getElementById('menu boton');
-    console.log(menu); //debug   
 
     //console.log('fin-cargardom');//tracer
 });
@@ -28,5 +27,4 @@ function menu_navbar() {
         menu.classList.add("hidden")
         menu_boton.classList.remove("bg-zinc-600")
     }
-    console.log(menu_abierto); //debug
 }

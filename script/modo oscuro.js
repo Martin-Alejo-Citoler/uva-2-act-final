@@ -1,3 +1,6 @@
+let icono_modo_oscuro;
+let icono_modo_claro;
+
 let elementos_borde;
 let elementos_fondo;
 let elementos_texto;
@@ -6,10 +9,13 @@ let elementos_fondo_2;
 let elementos_fondo_3;
 let elementos_hyperlink;
 
-
 let modo_oscuro = false;
 
+
+
+
 function actualizar_modo_oscuro(elementos,clase_1,clase_2) {
+
     if (modo_oscuro == true) {
         for (let i = 0; i < elementos.length; i++) {
             elementos[i].classList.replace(clase_1,clase_2);
@@ -22,6 +28,23 @@ function actualizar_modo_oscuro(elementos,clase_1,clase_2) {
     }
 }
 
+function actualizar_botones_modo() { //cambiar la imagen de todas las instancias del boton de modo oscuro mediante la ocultación y visibilización de dos <img> dentro de los botones
+
+    if (modo_oscuro == true) {
+        for (let i = 0; i < icono_modo_oscuro.length; i++) {
+            icono_modo_claro[i].classList.remove("hidden");
+            icono_modo_oscuro[i].classList.add("hidden");
+        }
+
+    } else {
+        for (let i = 0; i < icono_modo_oscuro.length; i++) {
+            icono_modo_claro[i].classList.add("hidden");
+            icono_modo_oscuro[i].classList.remove("hidden");
+        }
+    }
+
+}
+
 function cambiar_modo_oscuro() {
     if (modo_oscuro == false) {
         modo_oscuro = true;
@@ -29,6 +52,8 @@ function cambiar_modo_oscuro() {
         modo_oscuro = false;
     }
     //console.log('modo oscuro:', modo_oscuro); //tracer
+
+    actualizar_botones_modo();
 
     actualizar_modo_oscuro(elementos_fondo,"bg-zinc-100","bg-zinc-800");
     actualizar_modo_oscuro(elementos_borde,"border-zinc-300","border-zinc-600");
@@ -44,9 +69,15 @@ function cambiar_modo_oscuro() {
     actualizar_modo_oscuro(elementos_hyperlink,"visited:text-purple-700","visited:text-purple-500")
 }
 
+
+
+
 window.addEventListener("DOMContentLoaded", (event) => { //esperar a que carge el sistema dom
 
     //console.log('inicio-cargardom');//tracer
+
+    icono_modo_oscuro = document.querySelectorAll(".icono-modo-oscuro");
+    icono_modo_claro = document.querySelectorAll(".icono-modo-claro");
 
     elementos_fondo = document.querySelectorAll(".bg-zinc-100");
     elementos_borde = document.querySelectorAll(".border-zinc-300");
